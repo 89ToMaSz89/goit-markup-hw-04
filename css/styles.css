@@ -1,0 +1,528 @@
+  /* *************** VARIABLES *************** */
+  
+  :root{
+    --main-font: 'Roboto', 'Relaway', sans-serif;
+    --main-color: #2196f3;
+    --secondary-color: #212121;
+    --third-color: #757575;
+    --text-btn-color: #ffffff;
+    --main-background-color: #2f303a;
+    --border-card-color: #eeeeee;
+    --border-main-head-color: #ececec;
+    --contact-foter-color: rgba(255, 255, 255, 0.6);
+    --bg-color: #f5f4fa;
+  }
+
+/* ########################################### */
+
+/* *************** GLOBAL SETTINGS  *************** */
+
+body{
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    margin: 0px;
+}
+
+h2{
+    margin: 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.116;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-color);
+}
+
+              /* klasa pomocnicza  */
+.container{     
+    max-width: 1200px;
+
+    margin: 0 auto; 
+}
+            /* ................. */
+
+/* *************** HEADER *************** */
+
+
+
+            /**************/
+            /* NAVIGATION */
+            /**************/
+
+.main-head-border-bottom{
+    border-bottom: 1px solid var(--border-main-head-color);
+}
+
+.main-head{
+    margin: 0px;
+    padding: 32px 0px;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; 
+
+    background-color: var(--text-btn-color);
+}
+
+.main-head-logo-web-part,
+.main-head-logo-studio-part{
+    margin: 0px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+
+.main-head-logo-web-part{
+    color: var(--main-color);
+}
+
+.main-head-logo-studio-part{
+    margin-right: 93px;
+    color: var(--secondary-color);
+}
+
+.menu-navigation{
+    margin: 0px;
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em; 
+
+    margin-right: 364px;
+}
+
+.menu-navigation-item:not(:last-child){
+    margin-right: 43px;
+}
+
+.menu-navigation .menu-navigation-item-link{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.menu-navigation .menu-navigation-item-link:hover,
+.menu-navigation .menu-navigation-item-link:focus,
+.menu-navigation .menu-navigation-item-link:active{
+    color: var(--main-color);
+}
+
+.main-head-contact{
+    margin: 0px;
+    display: flex;
+   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.main-head-contact-item:first-child{
+    margin-right: 50px;
+}
+
+.main-head-contact .main-head-contact-item-link{
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.main-head-contact .main-head-contact-item-link:hover,
+.main-head-contact .main-head-contact-item-link:focus{
+    color: var(--main-color);
+}
+            /******************/
+            /* END NAVIGATION */
+            /******************/       
+
+/* *************** END HEADER *************** */
+
+/* ************************************************************** */
+/* ************************* PORTFOLIO.HTML ************************* */
+/* ************************************************************** */
+
+/* *************** MAIN *************** */
+
+            /********/
+            /* MENU */
+            /********/
+
+.menu{
+    margin: 0px;
+
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+
+    margin-top: 94px;
+    margin-left: 510px; 
+}
+
+.menu >.menu-item:not(:first-child){
+    margin-left: 8px;
+}
+
+.menu-btn{
+    margin: 0px;
+
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    border: none;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-color);
+}
+
+.menu-btn:hover,
+.menu-btn:focus{
+    background-color: var(--main-color);
+    color: var(--text-btn-color);
+    
+    cursor: pointer;
+}
+
+            /************/
+            /* END MENU */
+            /************/
+
+            /************/
+            /* PROJECTS */
+            /************/
+
+.picture-card{
+    margin: 0px;
+}
+
+.project-card{
+    margin: 0px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.project-card > .project-card-item{
+    border-bottom: 1px solid var(--border-card-color);
+    background-color: var(--text-btn-color);
+}
+
+ .project-name{
+    margin: 0px;
+
+    margin-top: 20px;
+    margin-left: 24px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+
+    letter-spacing: 0.06em;
+
+    color: var(--secondary-color);
+}
+
+.category-name{
+    margin: 4px 0px 20px 24px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+} 
+
+            /****************/
+            /* END PROJECTS */
+            /****************/
+
+/* *************** END MAIN *************** */
+/* ########################################### */
+/* *************** FOOTER *************** */
+
+.foter{
+    box-sizing: border-box;
+
+    margin: 0px;
+    
+    padding: 60px 0px;
+
+    background-color: var(--main-background-color);
+}
+
+.foter-logo-web-part,
+.foter-logo-studio-part{  
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+
+.foter-logo-web-part{
+    color: var(--main-color);
+}
+
+.foter-logo-studio-part{
+    color: var(--text-btn-color);
+}
+
+.foter-contact{
+    margin-top: 20px;
+}
+
+.foter-contact-details-item{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+
+    margin-top: 9px;
+}
+
+.foter-contact-details-item-link,
+.foter-contact-details-item-telephone{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: var(--contact-foter-color);
+}
+
+.foter-contact-details-item-link{
+    text-decoration: underline;
+}
+
+.foter-contact-details-item-link:hover,
+.foter-contact-details-item-link:focus,
+.foter-contact-details-item-telephone:hover,
+.foter-contact-details-item-telephone:focus{
+    color: var(--main-color);
+}
+
+/* *************** END FOOTER *************** */
+/* ########################################### */
+
+
+/* ************************************************************** */
+/* ************************* INDEX.HTML ************************* */
+/* ************************************************************** */
+
+/* *************** MAIN *************** */
+
+            /***********/
+            /* HEADING */
+            /***********/
+
+.heading{
+    margin: 0px;
+
+    box-sizing: border-box; 
+
+    background-image: linear-gradient(
+
+                    0deg,
+                    rgba(47,48,58,0.4)0%,
+                    rgba(47,48,58,0.4)100%),
+                    url('../images/imgNew.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.heading-titlee{
+    margin: 0px;
+
+    padding: 200px 452px 0px 452px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+
+    text-align: center;
+    letter-spacing: 0.06em; 
+    white-space: pre;
+
+    color: var(--text-btn-color);
+}
+
+.main-btn{
+    margin: 0px;
+
+    margin-left: 658px;  
+    margin-bottom: 210px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--text-btn-color);
+
+    padding: 10px 41px 10px 42px;
+
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none; 
+}
+
+.main-btn:hover,
+.main-btn:focus{
+    cursor: pointer;
+}
+
+            /***************/
+            /* END HEADING */
+            /***************/
+
+            /***********/
+            /* SECTION */
+            /***********/
+
+.distance-top{
+    padding-top: 44px;
+}
+
+.ssection{
+    margin: 0px;
+
+    box-sizing: border-box;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.ssection-bg-color{
+    background-color: var(--bg-color);
+}
+
+.ssection-list{
+    margin: 0px;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+
+    margin-top: 50px;
+
+    color: var(--secondary-color);
+}
+
+.ssection-list .ssection-list-item-paragraph{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+}
+
+.ssection-list-item:not(:first-child){
+    margin-left: 30px;
+}
+
+.ssection-card-person{
+    margin: 0px;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--text-btn-color);
+}
+
+.ssection-card-person:not(last-child){
+    margin-right: 30px;
+}
+
+.ssection-card-person-name{
+    margin: 0px;
+    margin-top: 30px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.ssection-card-person-position{
+    margin: 0px;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+}
+
+            /***************/
+            /* END SECTION */
+            /***************/
+
+/* ************************************ */
+/* *************** END MAIN *********** */
+/* ************************************ */
