@@ -11,6 +11,7 @@
     --border-main-head-color: #ececec;
     --contact-foter-color: rgba(255, 255, 255, 0.6);
     --bg-color: #f5f4fa;
+    --icons-color: #AFB1B8;
   }
 
 /* ########################################### */
@@ -507,7 +508,7 @@ h2{
     margin: 0px;
 
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 
     font-weight: 400;
     font-size: 16px;
@@ -517,7 +518,43 @@ h2{
     letter-spacing: 0.03em;
 
     color: var(--third-color);
+    /* border: 1px solid green; */
 }
+
+            /*******/
+            /* SVG */
+            /*******/
+
+ .ssection-card-person-icons{
+    margin: 0px;
+    padding: 12px 12px 12px 12.04px;
+
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* fill: var(--icons-color); */
+
+    fill: black;
+
+    border: 2px solid orange;
+} 
+
+.icons:hover{
+    fill: var(--text-btn-color);
+    
+    cursor: pointer;
+}
+
+
+
+            /***********/
+            /* END SVG */
+            /***********/
 
             /***************/
             /* END SECTION */
