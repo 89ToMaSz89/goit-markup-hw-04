@@ -11,7 +11,7 @@
     --border-main-head-color: #ececec;
     --contact-foter-color: rgba(255, 255, 255, 0.6);
     --bg-color: #f5f4fa;
-    --icons-color: #AFB1B8;
+    --icon-color: #AFB1B8;
   }
 
 /* ########################################### */
@@ -65,12 +65,11 @@ h2{
 }
 
 .main-head{
-    margin: 0px;
-    padding: 32px 0px;
-
     box-sizing: border-box;
     display: flex;
     align-items: center; 
+
+    padding: 32px 0px;
 
     background-color: var(--text-btn-color);
 }
@@ -91,6 +90,7 @@ h2{
 }
 
 .main-head-logo-web-part{
+
     color: var(--main-color);
 }
 
@@ -172,8 +172,7 @@ h2{
     display: flex;
     align-items: center;
 
-    margin-top: 94px;
-    margin-left: 510px; 
+    padding-left: 295px;
 }
 
 .menu >.menu-item:not(:first-child){
@@ -230,7 +229,6 @@ h2{
     gap: 30px;
    
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 
 .project-card > .project-card-item{
@@ -275,11 +273,11 @@ h2{
 
 .foter{
     box-sizing: border-box;
-
-    margin: 0px;
     
     padding: 60px 0px;
+}
 
+.foter-overlay{
     background-color: var(--main-background-color);
 }
 
@@ -365,6 +363,8 @@ h2{
 
     box-sizing: border-box; 
 
+    padding: 200px 0px;
+
     background-image: linear-gradient(
 
                     0deg,
@@ -373,13 +373,13 @@ h2{
                     url('../images/imgNew.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center
+    background-position: center;
 }
 
 .heading-titlee{
     margin: 0px;
 
-    padding: 200px 452px 0px 452px;
+    /* padding-bottom: 30px; */
 
     font-weight: 900;
     font-size: 44px;
@@ -393,10 +393,13 @@ h2{
 }
 
 .main-btn{
-    margin: 0px;
+    margin: 0px; 
 
-    margin-left: 658px;  
-    margin-bottom: 210px;
+    box-sizing: border-box;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 16px;
@@ -428,12 +431,7 @@ h2{
             /* SECTION */
             /***********/
 
-.distance-top{
-    padding-top: 44px;
-}
-
 .ssection{
-    margin: 0px;
 
     box-sizing: border-box;
 
@@ -441,13 +439,13 @@ h2{
     padding-bottom: 94px;
 }
 
-.ssection-bg-color{
+.ssection-overlay{
     background-color: var(--bg-color);
 }
 
-.ssection-list{
-    margin: 0px;
-
+.ssection-list-our-strengths,
+.ssection-list-our-job,
+.ssection-list-our-team{
     display: flex;
     align-items:center;
     justify-content: center;
@@ -457,12 +455,19 @@ h2{
     line-height: 1.143;
     letter-spacing: 0.03em;
 
-    margin-top: 50px;
-
     color: var(--secondary-color);
 }
 
-.ssection-list .ssection-list-item-paragraph{
+.ssection-list-our-strengths{
+    padding-top: 94px;
+}
+
+.ssection-list-our-job,
+.ssection-list-our-team{
+    padding-top: 50px;
+}
+
+.ssection-list-our-strengths .ssection-list-item-paragraph{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
@@ -518,68 +523,43 @@ h2{
     letter-spacing: 0.03em;
 
     color: var(--third-color);
-    /* border: 1px solid green; */
 }
 
-            /*******/
             /* SVG */
-            /*******/
 
-.icons{
-    margin: 0px;
-    /* fill: var(--icons-color); */
-    /* border: 1px solid orange;
-    border-radius: 50px; */
-}
+.ssection-card-person-icons{
 
-  .ssection-card-person-icons{
-    margin: 0px;
-    /* padding: 12px 12px 12px 12.04px;
-
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 18px; */
-
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
 
-  .ssection-card-person-icons-item{
-    margin-bottom: 30px;
+    margin: 0px 32px 30px 32px;
+}
 
-    /* border: 1px solid orangered; */
-    border-radius: 50px;
-    padding: 12px;
-
-    /* align-items: center; */
-  }
-
-  .ssection-card-person-icons-item:first-child{
-    margin-left: 32px;
-  }
-
-  .ssection-card-person-icons-item:last-child{
-    margin-right: 32px;
-  }
-
-/* .icons:hover{
+.icon-box:hover,
+.icons:hover{
+    background-color: var(--main-color);
     fill: var(--text-btn-color);
-    
-    cursor: pointer;
-} */
+}
 
-.ssection-card-person-icons-item:hover{
-    background-color: #2196f3;
-    cursor: pointer;
-    fill: var(--text-btn-color);
+.icons{
+    fill: var(--icon-color);
+
+    border-radius: 50%;
 }
 
 
 
-            /***********/
+/* .ssection-card-person-icons-item:first-child{
+    margin-left: 32px;
+} */
+
+/* .ssection-card-person-icons-item:last-child{
+    margin-right: 32px;
+} */
+
             /* END SVG */
-            /***********/
 
             /***************/
             /* END SECTION */

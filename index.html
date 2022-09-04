@@ -20,61 +20,59 @@
   <body>
     <!--Header-->
 
-    <header>
-      <div class="container">
-        <div class="main-head">
-          <a href="./index.html" class="main-head-logo-web-part">
-            Web<span class="main-head-logo-studio-part">Studio</span>
-          </a>
+    <header class="main-head container">
+      <a href="./index.html" class="main-head-logo-web-part">
+        Web<span class="main-head-logo-studio-part">Studio</span>
+      </a>
 
-          <!--Menu navigation-->
+      <!--Menu navigation-->
 
-          <nav class="navigation">
-            <ul class="menu-navigation">
-              <li class="menu-navigation-item">
-                <a href="" class="menu-navigation-item-link">Agencja</a>
-              </li>
-              <li class="menu-navigation-item">
-                <a class="menu-navigation-item-link" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="menu-navigation-item">
-                <a href="" class="menu-navigation-item-link">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
+      <nav class="navigation">
+        <ul class="menu-navigation">
+          <li class="menu-navigation-item">
+            <a href="" class="menu-navigation-item-link">Agencja</a>
+          </li>
+          <li class="menu-navigation-item">
+            <a class="menu-navigation-item-link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu-navigation-item">
+            <a href="" class="menu-navigation-item-link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
 
-          <ul class="main-head-contact">
-            <li class="main-head-contact-item">
-              <a
-                class="main-head-contact-item-link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="main-head-contact-item">
-              <a class="main-head-contact-item-link" href="">+48 111 111 111</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <ul class="main-head-contact">
+        <li class="main-head-contact-item">
+          <a
+            class="main-head-contact-item-link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="main-head-contact-item">
+          <a class="main-head-contact-item-link" href="">+48 111 111 111</a>
+        </li>
+      </ul>
     </header>
 
     <!--Main-->
 
     <main>
-      <div class="heading">
-        <h1 class="heading-titlee">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-        </h1>
-        <button class="main-btn" type="button">Zamów usługę</button>
-      </div>
+      <section class="heading">
+        <div class="container">
+          <h1 class="heading-titlee">EFEKTYWNE ROZWIĄZANIA 
+DLA WASZEGO BIZNESU
+          </h1>
+          <button class="main-btn" type="button">Zamów usługę</button>
+        </div>
+      </section>
 
       <!--SECTION NO.1-->
 
-      <div class="container">
-        <ul class="ssection-list distance-top">
+      <section>
+        <ul class="ssection-list-our-strengths container">
           <li class="ssection-list-item">
             LOREM IPSUM
             <p class="ssection-list-item-paragraph">
@@ -104,21 +102,14 @@
             </p>
           </li>
         </ul>
-      </div>
+      </section>
 
       <!--SECTION NO.2-->
-
-      <!-- <svg width="50" height="50">
-        <use
-          href="./images/icons.svg#icon-twitter">
-        >
-        </use>
-      </svg> -->
 
       <section class="ssection">
         <div class="container">
           <h2>Czym się zajmujemy</h2>
-          <ul class="ssection-list">
+          <ul class="ssection-list-our-job">
             <li class="ssection-list-item">
               <img
                 class="ssection-picture"
@@ -150,10 +141,13 @@
 
       <!--SECTION NO.3-->
 
-      <section class="ssection ssection-bg-color">
+      <section class="ssection ssection-overlay">
         <div class="container">
           <h2>Nasz zespół</h2>
-          <ul class="ssection-list">
+          <ul class="ssection-list-our-team">
+
+            <!--FIRST CARD-->
+
             <li class="ssection-card-person">
               <img
                 src="images/imgD.jpg"
@@ -164,33 +158,64 @@
               <p class="ssection-card-person-name">John Doe</p>
               <p class="ssection-card-person-position">Product Designer</p>
 
-              <!--SVG-->
-
               <ul class="ssection-card-person-icons">
                 <li class="ssection-card-person-icons-item">
-                  <!-- <a class="ssection-card-person-icons-link" href=""> -->
-                    <svg class="icons" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                  <a href="https://www.instagram.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
                     </svg>
-                  <!-- </a> -->
+                  </a>
                 </li>
                 <li class="ssection-card-person-icons-item">
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
+                  <a href="https://twitter.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="ssection-card-person-icons-item">
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
+                  <a href="https://www.facebook.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="ssection-card-person-icons-item">
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin2"></use>
-                  </svg>
+                  <a href="https://pl.linkedin.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-linkedin2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
+
+            <!--SECOND CARD-->
+
             <li class="ssection-card-person">
               <img
                 src="images/imgE.jpg"
@@ -203,27 +228,62 @@
 
               <ul class="ssection-card-person-icons">
                 <li class="ssection-card-person-icons-item">
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
+                  <a href="https://www.instagram.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="20px" height="16.25px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://twitter.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="10px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://www.facebook.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin2"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://pl.linkedin.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-linkedin2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
+
+            <!--THIRD CARD-->
+
             <li class="ssection-card-person">
               <img
                 src="images/imgF.jpg"
@@ -236,27 +296,62 @@
 
               <ul class="ssection-card-person-icons">
                 <li class="ssection-card-person-icons-item">
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
+                  <a href="https://www.instagram.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="20px" height="16.25px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://twitter.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="10px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://www.facebook.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin2"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://pl.linkedin.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-linkedin2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
+
+            <!--FOURTH CARD-->
+
             <li class="ssection-card-person">
               <img
                 src="images/imgG.jpg"
@@ -269,24 +364,56 @@
 
               <ul class="ssection-card-person-icons">
                 <li class="ssection-card-person-icons-item">
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
+                  <a href="https://www.instagram.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="20px" height="16.25px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://twitter.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="10px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://www.facebook.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="icons" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin2"></use>
-                  </svg>
+                <li class="ssection-card-person-icons-item">
+                  <a href="https://pl.linkedin.com/">
+                    <svg class="icons" width="44px" height="44px">
+                      <use
+                        href="./images/icons.svg#icon-linkedin2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -297,7 +424,7 @@
 
     <!--Footer-->
 
-    <footer class="foter">
+    <footer class="foter foter-overlay">
       <div class="container">
         <a href="./index.html" class="foter-logo-web-part">
           Web<span class="foter-logo-studio-part">Studio</span>
