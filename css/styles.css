@@ -126,6 +126,8 @@ h2{
     color: var(--main-color);
 }
 
+            /* MAIN HEAD CONTACT */
+
 .main-head-contact{
     margin: 0px;
     display: flex;
@@ -134,46 +136,28 @@ h2{
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-
-    border: 2px solid orangered
-}
-
-.main-head-contact-icons{
-    margin-right: 10px;
 }
 
 .main-head-contact-item:first-child{
     margin-right: 30px;
 }
 
-/* .main-head-contact-item:{
-    margin-right: 50px;
-} */
-
-/* .main-head-contact-item-icons{
-    display: flex;
-    align-items: center;
-} */
-
-/* .main-head-contact-item{
-    display: flex;
-} */
-
-
-
-/* .main-head-contact-item-icons{
-    display: flex;
-} */
-
-.main-head-contact .main-head-contact-item-link{
+.main-head-contact-item-link{
     color: var(--third-color);
     text-decoration: none;
 }
 
-.main-head-contact .main-head-contact-item-link:hover,
-.main-head-contact .main-head-contact-item-link:focus{
-    color: var(--main-color);
+.main-head-contact-icons{
+    margin-right: 10px;
 }
+
+.main-head-contact-item-link:hover{
+    color: var(--main-color);
+    fill: var(--main-color);
+}
+
+            /* END MAIN HEAD CONTACT */
+
             /******************/
             /* END NAVIGATION */
             /******************/       
@@ -515,7 +499,7 @@ h2{
 .ssection-list-our-team{
     display: flex;
     align-items:center;
-    justify-content: center;
+    /* justify-content: center; */
 
     font-weight: 700;
     font-size: 14px;
