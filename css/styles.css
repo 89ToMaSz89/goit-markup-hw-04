@@ -459,7 +459,6 @@ h2{
 
     text-align: center;
     letter-spacing: 0.06em; 
-    /* white-space: pre; */
 
     color: var(--text-btn-color);
 }
