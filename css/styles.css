@@ -44,7 +44,7 @@ h2{
     color: var(--secondary-color);
 }
 
-              /* klasa pomocnicza  */
+              /* auxiliary class  */
 .container{     
     max-width: 1200px;
 
@@ -142,20 +142,27 @@ h2{
     margin-right: 30px;
 }
 
-.main-head-contact-icons{
+.main-head-contact-item-link{
+    color: var(--third-color);
 
-    width: 161px;
-    height: 16px;
+    text-decoration: none;
+}
+
+.main-head-contact-icons{       /* SVG */
+    margin-right: 10px;
+
+    width: 16px;
+    height: 12px;
 
     fill: var(--third-color);
 }
 
-.main-head-contact-icons:hover,
-.main-head-contact-icons:focus{
+.main-head-contact-item > a:hover .main-head-contact-icons,
+.main-head-contact-item-link:hover,
+.main-head-contact-item > a:focus .main-head-contact-icons,
+.main-head-contact-item-link:focus{
     color: var(--main-color);
     fill: var(--main-color);
-
-    cursor: pointer;
 }
 
             /* END MAIN HEAD CONTACT */
@@ -318,7 +325,7 @@ h2{
     margin-right: 70px;
 }
 
-.foter-icons{
+.foter-icons{                       /* SVG */
     fill: var(--text-btn-color);
 
     border-radius: 50%;
@@ -326,6 +333,10 @@ h2{
 }
 
 .foter-icons:hover{
+    background-color: var(--main-color);
+}
+
+.foter-list-item-icons-item > a:focus .foter-icons{
     background-color: var(--main-color);
 }
 
@@ -612,12 +623,6 @@ h2{
     margin: 0px 32px 30px 32px;
 }
 
-.icons:hover,
-.icons:focus{
-    background-color: var(--main-color);
-    fill: var(--text-btn-color);
-}
-
 .icons{
     fill: var(--icon-color);
 
@@ -625,6 +630,16 @@ h2{
 
     width: 44px;
     height: 44px;
+}
+
+.icons:hover{
+    background-color: var(--main-color);
+    fill: var(--text-btn-color);
+}
+
+.ssection-card-person-icons-item > a:focus .icons{
+    background-color: var(--main-color);
+    fill: var(--text-btn-color);
 }
 
             /* END SVG */
@@ -654,6 +669,11 @@ h2{
 }
 
 .icons-our-clients:hover{
+    fill: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.ssection-list-item > a:focus .icons-our-clients{
     fill: var(--main-color);
     border-color: var(--main-color);
 }
