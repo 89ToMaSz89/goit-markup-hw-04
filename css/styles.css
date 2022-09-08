@@ -142,18 +142,20 @@ h2{
     margin-right: 30px;
 }
 
-.main-head-contact-item-link{
-    color: var(--third-color);
-    text-decoration: none;
-}
-
 .main-head-contact-icons{
-    margin-right: 10px;
+
+    width: 161px;
+    height: 16px;
+
+    fill: var(--third-color);
 }
 
-.main-head-contact-item-link:hover{
+.main-head-contact-icons:hover,
+.main-head-contact-icons:focus{
     color: var(--main-color);
     fill: var(--main-color);
+
+    cursor: pointer;
 }
 
             /* END MAIN HEAD CONTACT */
@@ -544,7 +546,11 @@ h2{
     border-radius: 4px;
 }
 
-                    /* END OUR STRENGTHS - ICONS SVG */
+            /* END OUR STRENGTHS - ICONS SVG */
+
+/* ************************************************************ */
+
+            /* SECTION NO.3 - OUR TEAM */
 
 .ssection-list-item:not(:first-child){
     margin-left: 30px;
@@ -606,7 +612,8 @@ h2{
     margin: 0px 32px 30px 32px;
 }
 
-.icons:hover{
+.icons:hover,
+.icons:focus{
     background-color: var(--main-color);
     fill: var(--text-btn-color);
 }
@@ -615,11 +622,16 @@ h2{
     fill: var(--icon-color);
 
     border-radius: 50%;
+
+    width: 44px;
+    height: 44px;
 }
 
             /* END SVG */
 
-            /* OUR CLIENTS - ICONS SVG */
+/* ************************************************************ */         
+
+            /* SECTION NO.4 - OUR CLIENTS */
 
 .ssection-list-our-clients{
     display: flex;
@@ -628,7 +640,7 @@ h2{
     margin-block: 0px;
 }
 
-.icons-our-clients{
+.icons-our-clients{     /* icons SVG */
     margin: 0px;
 
     width: 170px;
